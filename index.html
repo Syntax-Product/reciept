@@ -1,40 +1,73 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="css/default.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <header>
+        <div class="header__body">
 
-    </header>
+            <div class="header-top-wrapper"></div>
+            <a href="#" class="header__logo">
+                <img src="img/icons/logo.png" alt="">
+            </a>
 
-    <div class="dropdown" >
-        <a class="dropdown__link" href="#">
-            Блюда
+          <nav class="header__nav" >
+            <div class="dropup">
+                <button class="dropbtn">Блюда</button>
+                <div class="dropup-content">
+                  <a href="#">Ссылка 1</a>
+                  <a href="#">Ссылка 2</a>
+                  <a href="#">Ссылка 3</a>
+                </div>
+              </div>
+
+              <div class="dropup">
+                <button class="dropbtn">Ингредиенты</button>
+                <div class="dropup-content">
+                  <a href="#">Ссылка 1</a>
+                  <a href="#">Ссылка 2</a>
+                  <a href="#">Ссылка 3</a>
+                </div>
+              </div>
+
+              <div class="dropup">
+                <button class="dropbtn">Праздничные рецепты</button>
+                <div class="dropup-content">
+                  <a href="#">Ссылка 1</a>
+                  <a href="#">Ссылка 2</a>
+                  <a href="#">Ссылка 3</a>
+                </div>
+              </div>
+          </nav>
+
+
+          <div class="header-bootom-wrapper"></div>
+          <a href="#" class="header__botom-logo">
+            <img src="img/icons/logo.png" alt="">
         </a>
-        <div class="dropdown__content">
-            <div class="dropdown-background"></div>
-            <div class="dropdown__content-inner">
-                <a href="#">Мясов</a>
-                <a href="#">Рыбов</a>
-                <a href="#">Сметанаф </a>
-            </div>
-        </div>
-    </div>
+          <div class="header__search-form">
+            <form class="search-form">
+                <input class="search-form__input" type="text" placeholder="Искать здесь...">
+                <button class="search-form__btn" type="submit"></button>
+              </form>
+          </div>
 
-<details>
-    <summary> Блюда</summary>
-    <div class="dropdown__content-inner">
-        <a href="#">Мясов</a>
-        <a href="#">Рыбов</a>
-        <a href="#">Сметанаф </a>
-    </div>
-</details>
+
+        </div>
+    </header>
+    
 </body>
 </html>
